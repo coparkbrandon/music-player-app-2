@@ -1,0 +1,48 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Music Player App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/d7411e6617.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <h1>Copark Music Player</h1>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+            <img src="uslp.cpm.009.ig.jpg" class="song-img" alt="uslp">
+            <h1>Grown Folks Business</h1>
+            <p>Connoisseur Park</p>
+
+            <audio id="song">
+              <source src="02 - Connoisseur Park - Grown Folks Business.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress" placeholder="none" oninput="seekToTime(this.value)">
+
+            <div class="controls">
+              <div><i class="fa-solid fa-backward"></i></div>
+              <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+              <div><i class="fa-solid fa-forward"></i></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+  </body>
+ </html>
